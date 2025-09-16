@@ -1,0 +1,191 @@
+@import "compass/css3";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+html {
+ 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;  
+  height: 300px;
+}
+h1 {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.testimonial-quote {
+  font-size: 16px;
+}
+.testimonial-quote blockquote {
+  /* Negate theme styles */
+  font-family: 'Montserrat' sans-serif;
+    font-weight: bold;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: none;
+  color: rgb(128, 1, 1);
+  font-family: Georgia, serif;
+  font-size: 1.5em;
+  font-style: italic;
+  line-height: 1.4 !important;
+  margin: 0;
+  position: relative;
+  text-shadow: 0 1px rgb(102, 0, 0);
+  z-index: 600;
+  text-transform: uppercase;
+}
+  .testimonial-quote:hover{
+
+    
+    flex-grow: 1,8; 
+    /* Увелечение пространаства */
+    letter-spacing: 0.5em;
+    /* межбуквенный интервал */
+    -webkit-transition: all 200ms ease-in-out;
+    background-image: url('https://i.pinimg.com/originals/0d/16/07/0d16076b539f299278b19ef463193a4d.gif');
+    background-repeat: no-repeat;
+  color: rgb(14, 68, 184);
+  background-size: cover;  
+  height: 500px;
+
+    
+  }
+
+.testimonial-quote blockquote * {
+  box-sizing: border-box;
+}
+.testimonial-quote blockquote p {
+  color: #d80707;
+  line-height: 1.4 !important;
+}
+.testimonial-quote blockquote p:first-child:before {
+  content: '\201C';
+  color: #81bedb;
+  font-size: 7.5em;
+  font-weight: 700;
+  opacity: 0.3;
+  position: absolute;
+  top: -0.4em;
+  left: -0.2em;
+  text-shadow: none;
+  z-index: -300;
+}
+.testimonial-quote img {
+  border: 3px solid #8f0000;
+  border-radius: 50%;
+  display: block;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: -0.2em;
+  left: 0;
+}
+.testimonial-quote cite {
+  color: rgb(4, 6, 109);
+  display: block;
+  font-size: 0.8em;
+}
+.testimonial-quote cite span {
+  color: #700303;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 1px rgb(17, 6, 172);
+}
+.testimonial-quote {
+  position: relative;
+}
+.testimonial-quote .quote-container {
+  padding-left: 160px;
+}
+.testimonial-quote.right .quote-container {
+  padding-left: 0;
+  padding-right: 160px;
+}
+.testimonial-quote.right img {
+  left: auto;
+  right: 0;
+}
+.testimonial-quote.right cite {
+  text-align: right;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+/* Main styles */
+body {
+  margin-top: 13.5rem;
+  color: #999999;
+  font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+  text-align: center;
+  /* img size is 50x50 */
+  background-image: url("https://pa1.aminoapps.com/6750/38b884ee7f45e4c6137987ed11337110c526fcbe_hq.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;  
+  height: 300px;
+  -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse 0.92s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+body::before {
+  content: "Бесконечная война";
+  font-size: 8rem;
+  font-weight: 100;
+  font-style: normal;
+  
+  
+
+}
